@@ -8,7 +8,7 @@ CREATE TABLE Monster.Monster
     ,TitleId int null
     ,TypeId int not null
     ,Name nvarchar(250) not null
-    ,PicturePath nvarchar(256) null
+    ,PicturePath nvarchar(256) null 
     ,Active bit not null
 );
 go

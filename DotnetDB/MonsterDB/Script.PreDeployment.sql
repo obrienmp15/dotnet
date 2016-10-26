@@ -23,3 +23,9 @@ go
 
 use MonsterDB;
 go
+
+if (SCHEMA_ID(N'Monster') is not null)
+begin
+  drop schema Monster;
+end;
+
