@@ -277,3 +277,5 @@ __pycache__/
 ### VisualStudio Patch ###
 build/
 
+/MonsterApp.DataAccess/MonsterApp.DataAccess/App.config
+/1610-oct17-dotnet/
