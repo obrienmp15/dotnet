@@ -1,4 +1,4 @@
-﻿using MonsterApp.DataAccess.Models;
+﻿using Models = MonsterApp.DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -15,7 +15,7 @@ namespace MonsterApp.DataAccess
     /// </summary>
     /// <param name="gender"></param>
     /// <returns></returns>
-    public bool InsertGender(Gender gender)
+    public bool InsertGender(Models.Gender gender)
     {
       var n = new SqlParameter("name", gender.GenderName);
       var query = "insert into Monster.Gender(GenderName, Active) values (@name, 1)";
