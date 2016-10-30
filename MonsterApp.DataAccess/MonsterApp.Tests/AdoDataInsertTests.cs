@@ -1,5 +1,5 @@
 ﻿using MonsterApp.DataAccess;
-using MonsterApp.DataAccess.Models;
+using Models = MonsterApp.DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +11,10 @@ namespace MonsterApp.Tests
 {
   public partial class AdoDataTests
   {
-    private Gender gender;
+    private Models.Gender gender;
     public AdoDataTests()
     {
-      gender = new Gender() { GenderName = "TestGender" };
+      gender = new Models.Gender() { GenderName = "TestGender" };
     }
     [Fact]
 
@@ -26,5 +26,15 @@ namespace MonsterApp.Tests
       Assert.True(actual);
 
     }
+
+    [Theory(gender = new Models.Gender() {GenderName = "blah", Active = true})]
+    public void Theory_InsertGender(Models.Gender gender)
+    {
+      var data = new AdoData();
+      var actual = data.InsertGender(gender);
+
+      Assert.True(actual);
+    }
+
   }
 }
