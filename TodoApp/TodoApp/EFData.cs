@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TodoApp.Models;
 
 
@@ -41,7 +38,7 @@ namespace TodoApp
     {
       var actives = db.Items.Where(a => a.Active);
       var complete = db.Items.Select(c => c.Complete);
-      var name = db.Items.Where(n => n.ItemsName.ToLower().Contains("m"));
+      var name = db.Items.Where(n => n.ItemName.ToLower().Contains("b"));
     }
   }
 }
