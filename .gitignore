@@ -279,3 +279,7 @@ build/
 
 /MonsterApp.DataAccess/MonsterApp.DataAccess/App.config
 /1610-oct17-dotnet/
+/MonsterApp.DataAccess/MonsterApp.DataClient/Web.config
+/MonsterApp.DataAccess/MonsterApp.DataClient/Web.Debug.config
+/MonsterApp.DataAccess/MonsterApp.DataClient/Web.Release.config
+/dotnet/
