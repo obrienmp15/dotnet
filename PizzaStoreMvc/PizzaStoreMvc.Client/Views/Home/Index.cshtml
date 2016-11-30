@@ -1,0 +1,34 @@
+﻿@model PizzaStoreMvc.Client.ViewModels.PizzaOrder
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(m => m.Options.Sauces)
+  @Html.DropDownListFor(m => m.Options.Sauces, Model.Options.Sauces)
+  @Html.ValidationMessageFor(m => m.Options.Sauces)
+
+  @Html.LabelFor(m => m.Options.Crusts)
+  @Html.DropDownListFor(m => m.Options.Crusts, Model.Options.Crusts)
+  @Html.ValidationMessageFor(m => m.Options.Crusts)
+
+  @Html.LabelFor(m => m.Options.Sizes)
+  @Html.DropDownListFor(m => m.Options.Sizes, Model.Options.Sizes)
+  @Html.ValidationMessageFor(m => m.Options.Sizes)
+
+  @Html.LabelFor(m => m.Options.Cheeses)
+  @Html.DropDownListFor(m => m.Options.Cheeses, Model.Options.Cheeses)
+  @Html.ValidationMessageFor(m => m.Options.Cheeses)
+
+  @Html.LabelFor(m => m.Options.Toppings1)
+  @Html.DropDownListFor(m => m.Options.Toppings1, Model.Options.Toppings1)
+  @Html.ValidationMessageFor(m => m.Options.Toppings1)
+
+  @Html.LabelFor(m => m.Options.Toppings2)
+  @Html.DropDownListFor(m => m.Options.Toppings2, Model.Options.Toppings2)
+  @Html.ValidationMessageFor(m => m.Options.Toppings2)
+
+  <button type="submit">Submit</button>
+
+}
+
+
+@Html.Partial("~/Views/Shared/CartView.cshtml", Model.Details)

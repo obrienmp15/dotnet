@@ -283,3 +283,6 @@ build/
 /MonsterApp.DataAccess/MonsterApp.DataClient/Web.Debug.config
 /MonsterApp.DataAccess/MonsterApp.DataClient/Web.Release.config
 /dotnet/
+/dotnet-feature-monster-data-access
+/pro-asp.net-4.5-in-csharp-master
+/Monster.Web

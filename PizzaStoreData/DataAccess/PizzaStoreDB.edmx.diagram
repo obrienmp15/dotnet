@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="68f79c6cb7ab4b2cbd32d745cd5098f8" Name="Diagram1">
+        <EntityTypeShape EntityType="PizzaDBModel.Cheese" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaDBModel.Crust" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaDBModel.Customer" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaDBModel.Order" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaDBModel.Pizza" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaDBModel.Sauce" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaDBModel.Size" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PizzaDBModel.Topping" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <AssociationConnector Association="PizzaDBModel.fk_pizza_cheeseid" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaDBModel.fk_pizza_crustid" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaDBModel.fk_orders_customerid" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaDBModel.fk_orders_pizzaid" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaDBModel.fk_pizza_orderid" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaDBModel.fk_pizza_sauceid" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaDBModel.fk_pizza_sizeid" ManuallyRouted="false" />
+        <AssociationConnector Association="PizzaDBModel.fk_pizza_toppingid" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
